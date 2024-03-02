@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Enlace a la hoja de estilos -->
+    <title>Registrarse - SALUD Contigo</title> <!-- Título del documento -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="../img/logo.PNG" alt="Logo SALUD Contigo"> <!-- Imagen del logo -->
+        </div>
+        <!-- Navegación -->
+        <nav>
+            <ul>
+                <li><a href="../#">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="../web/login.html">Ingresar</a></li> <!-- Enlace a la página de inicio de sesión -->
+                <li><a href="#" class="active">Registrarse</a></li> <!-- Enlace activo a la página de registro -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <br>
+    <div class="container login">
+        <h2>Registrarse</h2> <!-- Título -->
+        <!-- Formulario de registro -->
+        <form action="procesar_registro.php" method="POST">
+            <br>
+            <!-- Tabla para organizar los campos de entrada -->
+            <table class="form-table">
+                <!-- Campo de nombres -->
+                <tr>
+                    <td><label for="nombres">Nombres:</label></td> <!-- Etiqueta para el campo de nombres -->
+                    <td><input type="text" id="nombres" name="nombres" required></td> <!-- Campo de entrada para los nombres -->
+                </tr>
+                <!-- Campo de apellidos -->
+                <tr>
+                    <td><label for="apellidos">Apellidos:</label></td> <!-- Etiqueta para el campo de apellidos -->
+                    <td><input type="text" id="apellidos" name="apellidos" required></td> <!-- Campo de entrada para los apellidos -->
+                </tr>
+                <!-- Campo de número de documento -->
+                <tr>
+                    <td><label for="numero_documento">Número de Documento:</label></td> <!-- Etiqueta para el campo de número de documento -->
+                    <td><input type="text" id="numero_documento" name="numero_documento" required></td> <!-- Campo de entrada para el número de documento -->
+                </tr>
+                <!-- Campo de correo electrónico -->
+                <tr>
+                    <td><label for="correo_electronico">Correo Electrónico:</label></td> <!-- Etiqueta para el campo de correo electrónico -->
+                    <td><input type="text" id="correo_electronico" name="correo_electronico" required></td> <!-- Campo de entrada para el correo electrónico -->
+                </tr>
+                <!-- Campo de teléfono -->
+                <tr>
+                    <td><label for="telefono">Teléfono:</label></td> <!-- Etiqueta para el campo de teléfono -->
+                    <td><input type="text" id="telefono" name="telefono" required></td> <!-- Campo de entrada para el teléfono -->
+                </tr>
+                <!-- Campo de contraseña -->
+                <tr>
+                    <td><label for="contrasena">Contraseña:</label></td> <!-- Etiqueta para el campo de contraseña -->
+                    <td><input type="password" id="contrasena" name="contrasena" required></td> <!-- Campo de entrada para la contraseña -->
+                </tr>
+            </table>
+
+            <br>
+            <button type="submit">Registrarse</button> <!-- Botón para enviar el formulario -->
+        </form>
+        <!-- Enlace para iniciar sesión si ya tiene una cuenta -->
+        <p>¿Ya tienes una cuenta? <a href="../web/login.html">Inicia sesión aquí</a></p>
+    </div>
+    <br>
+
+    <!-- Tabla para secciones de Contacto y Acerca de -->
+    <div class="table">
+        <!-- Columna de Contacto -->
+        <div class="column contacto">
+            <h2>Contacto</h2> <!-- Título -->
+            <!-- Información de contacto -->
+            <p>Para más información, contáctanos:</p>
+            <p>Email: info@saludcontigo.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+        </div>
+        <!-- Columna de Acerca de -->
+        <div class="column acerca-de">
+            <h2>Acerca de</h2> <!-- Título -->
+            <!-- Información sobre la clínica -->
+            <p>Somos una clínica comprometida con</p>
+            <p>tu salud y bienestar.</p>
+            <p>Ofrecemos servicios de calidad para</p>
+            <p>atender tus necesidades médicas.</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>SALUD Contigo - Todos los derechos reservados</p> <!-- Información de derechos de autor -->
+    </footer>
+</body>
+</html>
